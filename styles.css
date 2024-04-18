@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
-html {
-    width: 100%;
+body {
+  width: 100%;
   height: 100%;
   background: url(./images/main\ bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 #header {
   position: fixed;
@@ -21,7 +20,7 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  background: linear-gradient(0.25turn, #eee 10%, transparent 65%);
   border-radius: 12px;
 }
 
@@ -62,21 +61,46 @@ li {
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 150px;
+}
+
+h1,
+h2 {
+  font-family: "Lugrasimo";
+  color: #242220;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#pictures {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 40px;
+  /* grid-template-columns: 2fr 2fr; */
+  
+}
+
+.picture img {
+  height: 200px;
+  width: 100%;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.picture p {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
     text-align: center;
-    height: 200px;
-    margin-top: 150px;
-  }
-
-  h1, h2 {
-    font-family: "Lugrasimo";
-    color:#A9A299;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 40px;
-
+    color:#A5FFC9;
+    font-weight: bold;
     
-  }
+}
